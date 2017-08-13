@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "GTMetric analyzer",
+    "version": "2.1",
+    "description": "Analyze the speed of your site.",
+    "permissions": [
+        "tabs"
+    ],
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
